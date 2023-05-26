@@ -19,7 +19,7 @@ export class PanService {
     async remove(id: string) {
         const pan = await this.findOne(id);
         await this.panRepository.remove(pan);
-        return 'Producto eliminado satisfactoriamente';
+        return 'Producto Eliminado con exito';
     }
 
     findOne(id: string) {
